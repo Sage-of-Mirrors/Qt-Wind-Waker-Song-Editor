@@ -61,9 +61,16 @@ void SongManager::SaveSongData() {
     delete writer;
 }
 
-void SongManager::OpenFile() {
+bool SongManager::OpenFile() {
     QString file_name = QFileDialog::getOpenFileName(nullptr, "Open .dol file", "", "GameCube executable files (*.dol)");
-    LoadSongData(file_name);
+
+    if(!file_name.isEmpty()&& !file_name.isNull()) {
+        LoadSongData(file_name);
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 void SongManager::SaveFile() {

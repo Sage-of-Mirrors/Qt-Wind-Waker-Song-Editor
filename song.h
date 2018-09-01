@@ -22,6 +22,13 @@ public:
     Song();
     Song(bStream::CFileStream * reader);
 
+    int GetNoteCount() {
+        return mNoteCount;
+    }
+    void SetNoteCount(int count) {
+        mNoteCount = count;
+    }
+
     void SaveSong(bStream::CFileStream * writer);
 };
 

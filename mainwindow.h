@@ -32,6 +32,12 @@ private slots:
 
     void on_SongSelector_currentIndexChanged(int index);
 
+    void on_note3Radio_toggled(bool checked);
+
+    void on_note4Radio_toggled(bool checked);
+
+    void on_note6Radio_toggled(bool checked);
+
 public slots:
     void updateNoteGraphics(int noteType);
     void updateSongNote(int noteType);

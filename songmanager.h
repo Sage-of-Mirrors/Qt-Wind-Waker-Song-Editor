@@ -29,7 +29,7 @@ public:
 
     Song * GetCurrentSong();
 
-    void OpenFile();
+    bool OpenFile();
     void SaveFile();
     void SaveFileAs();
 };
