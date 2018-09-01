@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>WWdown.png</file>
+        <file>WWempty.png</file>
+        <file>WWleft.png</file>
+        <file>WWMiddleNew.png</file>
+        <file>WWright.png</file>
+        <file>WWup.png</file>
+    </qresource>
+</RCC>
